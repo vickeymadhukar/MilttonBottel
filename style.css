@@ -442,3 +442,46 @@ canvas {
     text-align: center;
     max-width: 1200px;
 }
+
+/* Responsive Styles */
+@media (max-width: 768px) {
+  .cont { left: 5%; width: 90vw; }
+  .cont h1 { font-size: 4rem; }
+  .cont p { font-size: 1rem; margin-top: 15px; width: 80%; }
+  
+  .intro img { height: 60vh; width: auto; margin-left: auto; margin-right: auto; margin-top: 30vh; display: block; }
+  
+  .navbar { padding: 15px; }
+  .navbar .logo { font-size: 1.5rem; }
+  .footer { font-size: 0.7rem; padding: 10px; flex-direction: column; text-align: center; gap: 5px; height: auto; bottom: 0; padding-bottom: 20px;}
+  
+  #circle-mask h1 { font-size: 6rem; }
+  #container h1 { font-size: 6rem; }
+  .shutter-back h1 { font-size: 3rem; }
+  
+  .whitebox { width: 80vw; left: 10%; top: 15%; height: auto; padding: 20px; text-align: center; align-items: center;}
+  .leftbox { width: 80vw; left: 10%; bottom: 15%; right: auto; height: auto; padding: 20px; text-align: center; align-items: center;}
+  
+  .upper-box { width: 85vw; margin: auto; left: 0; right: 0; top: 10%; padding: 15px; }
+  .lower-box { width: 85vw; margin: auto; left: 0; right: 0; top: auto; bottom: 10%; padding: 15px; }
+  
+  .reveal-section { padding: 10vh 5vw; }
+  .scroll-highlight { font-size: 2rem; text-align: center; }
+  
+  .feature-section-pinned { flex-direction: column; justify-content: center; }
+  .feature-pinned-left, .feature-pinned-right { width: 100%; height: auto; }
+  .feature-step { height: auto; padding: 10vh 5vw; max-width: 100%; align-items: center; text-align: center; }
+  .feature-step h1 { font-size: 3rem; }
+  .feature-step p { font-size: 1.2rem; }
+  .feature-pinned-right { position: relative; height: auto; padding: 5vh; display: flex; justify-content: center; }
+  .feature-img-pinned { max-width: 80vw; }
+  
+  .specs-title { font-size: 3rem; margin-bottom: 40px; }
+  .specs-list { flex-direction: column; gap: 40px; }
+  .spec-val { font-size: 3.5rem; }
+  
+  .buy-section { flex-direction: column-reverse; justify-content: flex-start; padding-top: 40vh; }
+  .buy-content { width: 100%; padding: 0 5vw; align-items: center; text-align: center; }
+  .buy-section h1 { font-size: 4rem; text-align: center; }
+  #buy-model-container { height: 60vh; position: absolute; top: 0; }
+}

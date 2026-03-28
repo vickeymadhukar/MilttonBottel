@@ -103,9 +103,25 @@ loader.load(
     buyModelWrapper.add(buyModelRef);
     buyScene.add(buyModelWrapper);
     
-    // Move model to the right half of the screen
-    buyModelWrapper.position.x = 6;
-    buyModelWrapper.position.y = -2;
+    // Setup Responsive positioning using GSAP MatchMedia
+    let mm = gsap.matchMedia();
+    
+    mm.add("(min-width: 769px)", () => {
+      // Desktop
+      model.scale.set(3, 3, 3);
+      buyModelWrapper.position.x = 6;
+      buyModelWrapper.position.y = -2;
+      buyModelWrapper.scale.set(1, 1, 1);
+    });
+
+    mm.add("(max-width: 768px)", () => {
+      // Mobile
+      model.scale.set(1.5, 1.5, 1.5);
+      buyModelWrapper.position.x = 0;
+      buyModelWrapper.position.y = 1;
+      buyModelWrapper.scale.set(0.6, 0.6, 0.6);
+    });
+
     buyModelWrapper.rotation.z = THREE.MathUtils.degToRad(10);
     
     gsap.fromTo(buyModelRef.rotation, 

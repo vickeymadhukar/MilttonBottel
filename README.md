@@ -17,3 +17,5 @@ Simply open `index.html` in your browser, or host it using a local server (like 
 - [GSAP (ScrollTrigger)](https://greensock.com/gsap/)
 - [Lenis](https://lenis.studiofreight.com/)
 - [SplitType](https://github.com/lukePeavey/SplitType)
+# Live 
+-Link https://miltonbottell.netlify.app
